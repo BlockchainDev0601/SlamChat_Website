@@ -1,0 +1,71 @@
+@font-face {
+    font-family: sfp-bold;
+    src: url(../font/sfpprosemibold.ttf);
+}
+@font-face {
+    font-family: sfp-medium;
+    /* src: url(../font/FontsFree-Net-SFProText-Medium.ttf); */
+	src: url(../font/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: sfp-regular;
+    src: url(../font/FontsFree-Net-SFProText-Regular.ttf);
+}
+/* *{
+	font-family: sfp-regular;
+} */
+.countdown-container {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+}
+
+.clock-item .inner {
+	height: 0px;
+	padding-bottom: 100%;
+	position: relative;	
+	width: 100%;
+}
+
+.clock-canvas {
+	background-color: white;
+	border-radius: 50%;
+	height: 0px;
+	padding-bottom: 100%;
+}
+
+.text {
+	color: rgb(135, 133, 139);	
+	font-size: 30px;
+	font-weight: bold;	
+	margin-top: -50px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+}
+
+.text .val {
+	font-size: 2.5vw;
+    margin-top: 1.2vw;
+}
+
+.text .type-time {
+	font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.clock-item {
+		margin-bottom: 30px;		
+	}
+}
+
+@media (max-width: 767px) {
+	.clock-item {
+		margin: 0px 30px 30px 30px;
+	}
+}
